@@ -59,7 +59,7 @@
           </li>
             <li class="m-r-10">
                 <a href="#">
-                    <span class="badge badge-primary">Dec 15, 2021 08:46:54 AM</span>
+                    <span class="badge badge-primary">Mar 23, 2022 12:13:30 AM</span>
                 </a>
             </li>
         </ul>
@@ -119,7 +119,7 @@
 					<i class="fa fa-exclamation-circle"></i>
 					</a>
 					<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
-						<a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success pull-right"></span></a>
+						
 						<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger pull-right"></span></a>
 						
 						
@@ -153,8 +153,8 @@
 					<div class="open-test">
 						<div class="test-detail">
 							<p class="name">Title of your feature</p>
-							<p class="duration text-sm">0h 1m 6s+765ms</p>
-							<span class="datetime">08:47:17 AM</span>
+							<p class="duration text-sm">0h 0m 0s+237ms</p>
+							<span class="datetime">00:13:33 AM</span>
 						</div>
 					</div>
 					<div class="test-contents d-none">
@@ -162,9 +162,9 @@
 							<div class="p-v-10 d-inline-block">
 								<div class="info">
 									<h5 class="test-status text-fail">Title of your feature</h5>
-									<span class='badge badge-success'>12.15.2021 08:47:17</span>
-									<span class='badge badge-danger'>12.15.2021 08:48:23</span>
-									<span class='badge badge-default'>0h 1m 6s+765ms</span>
+									<span class='badge badge-success'>03.23.2022 00:13:33</span>
+									<span class='badge badge-danger'>03.23.2022 00:13:33</span>
+									<span class='badge badge-default'>0h 0m 0s+237ms</span>
 								</div>
 								<div class="m-t-15">
 			<span class="badge badge-pill badge-default"><i class="fa fa-tag"></i> @Smoke_Test</span>
@@ -183,135 +183,6 @@
 				<div class="status-avatar float-left fail-bg">
 					<i class="fa fa-times text-white"></i>
 				</div>
-					<div class="status-avatar float-right mr-4">
-						<i class="fa fa-paperclip"></i>
-					</div>
-			</div>
-		</div>
-				<div class="collapse">
-					<div class="card-body">
-							<div class="d-flex align-items-center justify-content-start given" title="Com.EAM.Stepdefinitions.Login_Test.launch_the_chrome_browser_navigate_to_the_NSC_HomePage_url_click_the_user_login_button()">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Given Launch the chrome browser navigate to the NSC HomePage url click the user login button</span>
-							</div>
-				<div class="details"></div>
-							<div class="d-flex align-items-center justify-content-start when" title="Com.EAM.Stepdefinitions.Login_Test.user_clicks_the_user_login_button_directed_to_the_new_window_enters_username_and_password()">
-								<span class="alert-icon fail-bg">
-									<i class="fa fa-times text-white"></i>
-								</span>
-								<span>When user clicks the user login button directed to the new window enters username and password.</span>
-							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@class='btnLogin']' (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at Com.EAM.Utilities.Tools.waitfor_Clickable(Tools.java:64)
-	at Com.EAM.Webelements.LoginPage.click_loginButton(LoginPage.java:48)
-	at Com.EAM.Stepdefinitions.Login_Test.user_clicks_the_user_login_button_directed_to_the_new_window_enters_username_and_password(Login_Test.java:28)
-	at ✽.user clicks the user login button directed to the new window enters username and password.(file:///C:/Users/halmurat/Updated_WorkSpace/EAM_BDD_Automation/./Fetures/LoginTest.feature:27)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='btnLogin']"}
-  (Session info: chrome=96.0.4664.45)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HAL0998', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\halmurat\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b2672ea91585d626b00bc6f0b1bde9f4
-*** Element info: {Using=xpath, value=//input[@class='btnLogin']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at Com.EAM.Utilities.Tools.waitfor_Clickable(Tools.java:64)
-	at Com.EAM.Webelements.LoginPage.click_loginButton(LoginPage.java:48)
-	at Com.EAM.Stepdefinitions.Login_Test.user_clicks_the_user_login_button_directed_to_the_new_window_enters_username_and_password(Login_Test.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:768)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
-</textarea>
-							<div class="d-flex align-items-center justify-content-start then" title="Com.EAM.Stepdefinitions.Login_Test.external_user_should_be_landing_homepage()">
-								<span class="alert-icon skip-bg">
-									<i class="fa fa-long-arrow-right text-white"></i>
-								</span>
-								<span>Then external user should be landing homepage</span>
-							</div>
-				<div class="details">Step skipped</div>
-							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
-								</span>
-								<span>Com.EAM.Stepdefinitions.GenralHooks.tear_Down(io.cucumber.java.Scenario)</span>
-							</div>
-				<div class="details">this is my failure message</div>
-				<div class="details"></div>
-				<div class="details"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'></div>
-					</div>
-				</div>
-	</div>
-	<div class="card">
-		<div class="card-header" role="tab">
-			<div class="card-title pl-3">
-				<div class="node">User Able login successfully to EAM Application</div>
-				<div class="status-avatar float-left fail-bg">
-					<i class="fa fa-times text-white"></i>
-				</div>
 			</div>
 		</div>
 				<div class="collapse">
@@ -322,15 +193,7 @@ Session ID: b2672ea91585d626b00bc6f0b1bde9f4
 								</span>
 								<span>Com.EAM.Stepdefinitions.GenralHooks.set_up(io.cucumber.java.Scenario)</span>
 							</div>
-				<textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HAL0998', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)
+				<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because the return value of "java.lang.InheritableThreadLocal.get()" is null
 	at Com.EAM.TestBase.TestBase.launch_Browser(TestBase.java:108)
 	at Com.EAM.Stepdefinitions.GenralHooks.set_up(GenralHooks.java:14)
 </textarea>
@@ -356,12 +219,72 @@ Driver info: driver.version: RemoteWebDriver
 							</div>
 				<div class="details">Step skipped</div>
 							<div class="d-flex align-items-center justify-content-start asterisk" title="">
-								<span class="alert-icon pass-bg">
-									<i class="fa fa-check text-white"></i>
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
 								</span>
 								<span>Com.EAM.Stepdefinitions.GenralHooks.tear_Down(io.cucumber.java.Scenario)</span>
 							</div>
 				<div class="details">this is my failure message</div>
+				<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "java.lang.InheritableThreadLocal.get()" is null
+	at Com.EAM.TestBase.TestBase.close(TestBase.java:120)
+	at Com.EAM.Stepdefinitions.GenralHooks.tear_Down(GenralHooks.java:32)
+</textarea>
+					</div>
+				</div>
+	</div>
+	<div class="card">
+		<div class="card-header" role="tab">
+			<div class="card-title pl-3">
+				<div class="node">User Able login successfully to EAM Application</div>
+				<div class="status-avatar float-left fail-bg">
+					<i class="fa fa-times text-white"></i>
+				</div>
+			</div>
+		</div>
+				<div class="collapse">
+					<div class="card-body">
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Com.EAM.Stepdefinitions.GenralHooks.set_up(io.cucumber.java.Scenario)</span>
+							</div>
+				<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because the return value of "java.lang.InheritableThreadLocal.get()" is null
+	at Com.EAM.TestBase.TestBase.launch_Browser(TestBase.java:108)
+	at Com.EAM.Stepdefinitions.GenralHooks.set_up(GenralHooks.java:14)
+</textarea>
+							<div class="d-flex align-items-center justify-content-start given" title="Com.EAM.Stepdefinitions.Login_Test.launch_the_chrome_browser_navigate_to_the_NSC_HomePage_url_click_the_user_login_button()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Given Launch the chrome browser navigate to the NSC HomePage url click the user login button</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start when" title="Com.EAM.Stepdefinitions.Login_Test.user_clicks_the_user_login_button_directed_to_the_new_window_enters_username_and_password()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>When user clicks the user login button directed to the new window enters username and password.</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start then" title="Com.EAM.Stepdefinitions.Login_Test.external_user_should_be_landing_homepage()">
+								<span class="alert-icon skip-bg">
+									<i class="fa fa-long-arrow-right text-white"></i>
+								</span>
+								<span>Then external user should be landing homepage</span>
+							</div>
+				<div class="details">Step skipped</div>
+							<div class="d-flex align-items-center justify-content-start asterisk" title="">
+								<span class="alert-icon fail-bg">
+									<i class="fa fa-times text-white"></i>
+								</span>
+								<span>Com.EAM.Stepdefinitions.GenralHooks.tear_Down(io.cucumber.java.Scenario)</span>
+							</div>
+				<div class="details">this is my failure message</div>
+				<textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "java.lang.InheritableThreadLocal.get()" is null
+	at Com.EAM.TestBase.TestBase.close(TestBase.java:120)
+	at Com.EAM.Stepdefinitions.GenralHooks.tear_Down(GenralHooks.java:32)
+</textarea>
 					</div>
 				</div>
 	</div>
@@ -441,7 +364,7 @@ Driver info: driver.version: RemoteWebDriver
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>08:47:17 AM</td>
+									<td>00:13:33 AM</td>
 									<td class='linked' test-id='1'>
 										Title of your feature
 									</td>
@@ -452,7 +375,7 @@ Driver info: driver.version: RemoteWebDriver
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>08:47:17 AM</td>
+									<td>00:13:33 AM</td>
 									<td class='linked' test-id='2'>
 										User Able login successfully to EAM Application
 										<div class="">
@@ -466,7 +389,7 @@ Driver info: driver.version: RemoteWebDriver
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>08:48:23 AM</td>
+									<td>00:13:33 AM</td>
 									<td class='linked' test-id='8'>
 										User Able login successfully to EAM Application
 										<div class="">
@@ -514,7 +437,7 @@ Driver info: driver.version: RemoteWebDriver
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>08:47:17 AM</td>
+									<td>00:13:33 AM</td>
 									<td class='linked' test-id='2'>
 										User Able login successfully to EAM Application
 										<div class="">
@@ -562,7 +485,7 @@ Driver info: driver.version: RemoteWebDriver
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>08:48:23 AM</td>
+									<td>00:13:33 AM</td>
 									<td class='linked' test-id='8'>
 										User Able login successfully to EAM Application
 										<div class="">
@@ -604,7 +527,7 @@ Driver info: driver.version: RemoteWebDriver
 			<ul class="tools text-right">
 				<li>
 					<a href="#">
-					<span class="badge badge-primary">2</span>
+					<span class="badge badge-primary">1</span>
 					</a>
 				</li>
 			</ul>
@@ -614,13 +537,13 @@ Driver info: driver.version: RemoteWebDriver
 				<li class="test-item">
 					<div class="open-test">
 						<div class="test-detail">
-							<p class="name">org.openqa.selenium.TimeoutException</p>
-							<p class="duration text-sm">1 tests</p>
+							<p class="name">java.lang.NullPointerException</p>
+							<p class="duration text-sm">4 tests</p>
 						</div>
 					</div>
 					<div class="test-contents d-none">
 						<div class="info">
-							<h4>org.openqa.selenium.TimeoutException</h4>
+							<h4>java.lang.NullPointerException</h4>
 						</div>
 						<table class='table table-sm mt-4'>
 							<thead>
@@ -637,47 +560,51 @@ Driver info: driver.version: RemoteWebDriver
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>08:47:22 AM</td>
-									<td class='linked' test-id='5'>
-										When user clicks the user login button directed to the new window enters username and password.
+									<td>00:13:33 AM</td>
+									<td class='linked' test-id='3'>
+										Com.EAM.Stepdefinitions.GenralHooks.set_up(io.cucumber.java.Scenario)
 										<div class="">
 											<span class="badge badge-default">User Able login successfully to EAM Application</span>
 										</div>
 									</td>
 								</tr>
-							</tbody>
-						</table>
-					</div>
-				</li>
-				<li class="test-item">
-					<div class="open-test">
-						<div class="test-detail">
-							<p class="name">org.openqa.selenium.NoSuchSessionException</p>
-							<p class="duration text-sm">1 tests</p>
-						</div>
-					</div>
-					<div class="test-contents d-none">
-						<div class="info">
-							<h4>org.openqa.selenium.NoSuchSessionException</h4>
-						</div>
-						<table class='table table-sm mt-4'>
-							<thead>
-								<tr>
-									<th class="status-col">Status</th>
-									<th class="timestamp-col">Timestamp</th>
-									<th>TestName</th>
-								</tr>
-							</thead>
-							<tbody>
 								<tr>
 									<td>
 										<div class='status-avatar fail-bg'>
 											<i class="fa fa-times text-white"></i>
 										</div>
 									</td>
-									<td>08:48:23 AM</td>
+									<td>00:13:33 AM</td>
+									<td class='linked' test-id='7'>
+										Com.EAM.Stepdefinitions.GenralHooks.tear_Down(io.cucumber.java.Scenario)
+										<div class="">
+											<span class="badge badge-default">User Able login successfully to EAM Application</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>00:13:33 AM</td>
 									<td class='linked' test-id='9'>
 										Com.EAM.Stepdefinitions.GenralHooks.set_up(io.cucumber.java.Scenario)
+										<div class="">
+											<span class="badge badge-default">User Able login successfully to EAM Application</span>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<div class='status-avatar fail-bg'>
+											<i class="fa fa-times text-white"></i>
+										</div>
+									</td>
+									<td>00:13:33 AM</td>
+									<td class='linked' test-id='13'>
+										Com.EAM.Stepdefinitions.GenralHooks.tear_Down(io.cucumber.java.Scenario)
 										<div class="">
 											<span class="badge badge-default">User Able login successfully to EAM Application</span>
 										</div>
@@ -761,10 +688,10 @@ Driver info: driver.version: RemoteWebDriver
 					</div>
 				</div>
 				<div class="card-footer">
-					<div><small data-tooltip='33.333%'><b>3</b> steps passed</small></div>
+					<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
 					<div>
-						<small data-tooltip='22.222%'><b>2</b> steps failed, 
-						<b>4</b> skipped, <b data-tooltip='44.444%'>0</b> others
+						<small data-tooltip='40%'><b>4</b> steps failed, 
+						<b>6</b> skipped, <b data-tooltip='60%'>0</b> others
 						</small>
 					</div>
 				</div>
@@ -816,7 +743,7 @@ Driver info: driver.version: RemoteWebDriver
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Start</h6>
-							<h4 class="font-weight-light mt-4">Dec 15, 2021 08:46:54 AM</h4>
+							<h4 class="font-weight-light mt-4">Mar 23, 2022 12:13:30 AM</h4>
 							<span class="text-semibold text-success font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -832,7 +759,7 @@ Driver info: driver.version: RemoteWebDriver
 					<div class="media justify-content-between">
 						<div class="card-header">
 							<h6 class="card-title">Duration</h6>
-							<h4 class="font-weight-light mt-4">0h 1m 29s+39ms</h4>
+							<h4 class="font-weight-light mt-4">0h 0m 3s+644ms</h4>
 							<span class="text-semibold font-size-15">
 						</div>
 						<div class="align-self-end">
@@ -929,31 +856,31 @@ Driver info: driver.version: RemoteWebDriver
 		infoChild: 0,
 		debugChild: 0,
 		exceptionsChild: 2,
-		grandChildCount: 9,
-		passGrandChild: 3,
-		failGrandChild: 2,
+		grandChildCount: 10,
+		passGrandChild: 0,
+		failGrandChild: 4,
 		fatalGrandChild: 0,
 		errorGrandChild: 0,
 		warningGrandChild: 0,
-		skipGrandChild: 4,
+		skipGrandChild: 6,
 		infoGrandChild: 0,
 		debugGrandChild: 0,
-		exceptionsGrandChild: 6,
-		eventsCount: 10,
-		passEvents: 1,
-		failEvents: 2,
+		exceptionsGrandChild: 10,
+		eventsCount: 12,
+		passEvents: 0,
+		failEvents: 4,
 		fatalEvents: 0,
 		errorEvents: 0,
 		warningEvents: 0,
-		skipEvents: 4,
-		infoEvents: 3,
+		skipEvents: 6,
+		infoEvents: 2,
 		debugEvents: 0,
 		exceptionsEvents: 0
 	};
 </script>
 <script>
 	var timeline = {
-	        "Title of your feature":66.765
+	        "Title of your feature":0.237
 	};
 </script>
                 </div>

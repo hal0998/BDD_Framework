@@ -107,7 +107,7 @@
 									</span>
 									</a>
 									<div class="dropdown-menu pt-0 mt-2 animate fadeIn">
-										<a class="dropdown-item" href="#"><span class="tf" status="pass"><i class="fa fa-dot-circle-o text-success"></i>Pass</span></a>
+										
 										<a class="dropdown-item" href="#"><span class="tf" status="fail"><i class="fa fa-dot-circle-o text-danger"></i>Fail</span></a>
 										
 										
@@ -148,7 +148,7 @@
 											<div class="st fail test l0" 
 												tags="@Smoke_Test"
 												devices="">
-												<span class="tt">12.15.2021 08:47:17</span>&nbsp;
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">[Title of your feature] started</span>
 												<span class="category-list">
@@ -163,7 +163,7 @@
 											<div class="st fail test l1" 
 												tags="@Smoke_Test @Login_Feature"
 												devices="">
-												<span class="tt">12.15.2021 08:47:17</span>&nbsp;
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">|---[User Able login successfully to EAM Application] started</span>
 												<span class="category-list">
@@ -176,159 +176,98 @@
 												</span>
 												
 											</div>
-											<div class="st pass test l2" 
-												tags=""
-												devices="">
-												<span class="tt">12.15.2021 08:47:17</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Launch the chrome browser navigate to the NSC HomePage url click the user login button] started</span>
-												
-												<div class="st pass">
-													<span class="tt">12.15.2021 08:47:22</span>&nbsp;
-													<span class="ts">pass</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Launch the chrome browser navigate to the NSC HomePage url click the user login button]</span>
-													
-													<span class="td"></span>
-												</div>
-											</div>
 											<div class="st fail test l2" 
 												tags=""
 												devices="">
-												<span class="tt">12.15.2021 08:47:22</span>&nbsp;
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 												<span class="ts">fail</span>&nbsp;&nbsp;
-												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks the user login button directed to the new window enters username and password.] started</span>
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Com.EAM.Stepdefinitions.GenralHooks.set_up(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st fail">
-													<span class="tt">12.15.2021 08:48:22</span>&nbsp;
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 													<span class="ts">fail</span>&nbsp;&nbsp; 
-													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks the user login button directed to the new window enters username and password.]</span>
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Com.EAM.Stepdefinitions.GenralHooks.set_up(io.cucumber.java.Scenario)]</span>
 													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator 'By.xpath: //input[@class='btnLogin']' (tried for 10 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:95)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:272)
-	at Com.EAM.Utilities.Tools.waitfor_Clickable(Tools.java:64)
-	at Com.EAM.Webelements.LoginPage.click_loginButton(LoginPage.java:48)
-	at Com.EAM.Stepdefinitions.Login_Test.user_clicks_the_user_login_button_directed_to_the_new_window_enters_username_and_password(Login_Test.java:28)
-	at ✽.user clicks the user login button directed to the new window enters username and password.(file:///C:/Users/halmurat/Updated_WorkSpace/EAM_BDD_Automation/./Fetures/LoginTest.feature:27)
-Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//input[@class='btnLogin']"}
-  (Session info: chrome=96.0.4664.45)
-For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HAL0998', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.45, chrome: {chromedriverVersion: 96.0.4664.45 (76e4c1bb2ab46..., userDataDir: C:\Users\halmurat\AppData\L...}, goog:chromeOptions: {debuggerAddress: localhost:49361}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: b2672ea91585d626b00bc6f0b1bde9f4
-*** Element info: {Using=xpath, value=//input[@class='btnLogin']}
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
-	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
-	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
-	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-	at com.sun.proxy.$Proxy24.isDisplayed(Unknown Source)
-	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:314)
-	at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:43)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:300)
-	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:297)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:670)
-	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:666)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:249)
-	at Com.EAM.Utilities.Tools.waitfor_Clickable(Tools.java:64)
-	at Com.EAM.Webelements.LoginPage.click_loginButton(LoginPage.java:48)
-	at Com.EAM.Stepdefinitions.Login_Test.user_clicks_the_user_login_button_directed_to_the_new_window_enters_username_and_password(Login_Test.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:27)
-	at io.cucumber.java.JavaStepDefinition.execute(JavaStepDefinition.java:27)
-	at io.cucumber.core.runner.PickleStepDefinitionMatch.runStep(PickleStepDefinitionMatch.java:63)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:64)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:49)
-	at io.cucumber.core.runner.PickleStepTestStep.run(PickleStepTestStep.java:46)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:51)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:67)
-	at io.cucumber.junit.PickleRunners$NoStepDescriptions.run(PickleRunners.java:149)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:83)
-	at io.cucumber.junit.FeatureRunner.runChild(FeatureRunner.java:24)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:185)
-	at io.cucumber.junit.Cucumber.runChild(Cucumber.java:83)
-	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331)
-	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79)
-	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329)
-	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66)
-	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293)
-	at io.cucumber.junit.Cucumber$RunCucumber.evaluate(Cucumber.java:219)
-	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)
-	at org.junit.runners.ParentRunner.run(ParentRunner.java:413)
-	at org.eclipse.jdt.internal.junit4.runner.JUnit4TestReference.run(JUnit4TestReference.java:89)
-	at org.eclipse.jdt.internal.junit.runner.TestExecution.run(TestExecution.java:40)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:541)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.runTests(RemoteTestRunner.java:768)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.run(RemoteTestRunner.java:464)
-	at org.eclipse.jdt.internal.junit.runner.RemoteTestRunner.main(RemoteTestRunner.java:210)
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because the return value of "java.lang.InheritableThreadLocal.get()" is null
+	at Com.EAM.TestBase.TestBase.launch_Browser(TestBase.java:108)
+	at Com.EAM.Stepdefinitions.GenralHooks.set_up(GenralHooks.java:14)
 </textarea></span>
 												</div>
 											</div>
 											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">12.15.2021 08:48:22</span>&nbsp;
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Launch the chrome browser navigate to the NSC HomePage url click the user login button] started</span>
+												
+												<div class="st skip">
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Launch the chrome browser navigate to the NSC HomePage url click the user login button]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
+												<span class="ts">skip</span>&nbsp;&nbsp;
+												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks the user login button directed to the new window enters username and password.] started</span>
+												
+												<div class="st skip">
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
+													<span class="ts">skip</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks the user login button directed to the new window enters username and password.]</span>
+													
+													<span class="td">Step skipped</span>
+												</div>
+											</div>
+											<div class="st skip test l2" 
+												tags=""
+												devices="">
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then external user should be landing homepage] started</span>
 												
 												<div class="st skip">
-													<span class="tt">12.15.2021 08:48:22</span>&nbsp;
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then external user should be landing homepage]</span>
 													
 													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st fail test l2" 
 												tags=""
 												devices="">
-												<span class="tt">12.15.2021 08:48:22</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Com.EAM.Stepdefinitions.GenralHooks.tear_Down(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">12.15.2021 08:48:22</span>&nbsp;
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Com.EAM.Stepdefinitions.GenralHooks.tear_Down(io.cucumber.java.Scenario)]</span>
 													
 													<span class="td">this is my failure message</span>
 												</div>
-												<div class="st info">
-													<span class="tt">12.15.2021 08:48:23</span>&nbsp;
-													<span class="ts">info</span>&nbsp;&nbsp; 
+												<div class="st fail">
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Com.EAM.Stepdefinitions.GenralHooks.tear_Down(io.cucumber.java.Scenario)]</span>
-													<span class="tm"><img class='r-img' onerror='this.style.display="none"' data-featherlight='../embedded1.png' src='../embedded1.png'></span>
-													<span class="td"></span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "java.lang.InheritableThreadLocal.get()" is null
+	at Com.EAM.TestBase.TestBase.close(TestBase.java:120)
+	at Com.EAM.Stepdefinitions.GenralHooks.tear_Down(GenralHooks.java:32)
+</textarea></span>
 												</div>
 											</div>
 											<div class="st fail test l1" 
 												tags="@Smoke_Test @Login_Feature1"
 												devices="">
-												<span class="tt">12.15.2021 08:48:23</span>&nbsp;
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">|---[User Able login successfully to EAM Application] started</span>
 												<span class="category-list">
@@ -344,24 +283,16 @@ Session ID: b2672ea91585d626b00bc6f0b1bde9f4
 											<div class="st fail test l2" 
 												tags=""
 												devices="">
-												<span class="tt">12.15.2021 08:48:23</span>&nbsp;
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Com.EAM.Stepdefinitions.GenralHooks.set_up(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st fail">
-													<span class="tt">12.15.2021 08:48:23</span>&nbsp;
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 													<span class="ts">fail</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Com.EAM.Stepdefinitions.GenralHooks.set_up(io.cucumber.java.Scenario)]</span>
 													
-													<span class="td">threw an exception<br><textarea disabled class="code-block">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
-Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
-System info: host: 'HAL0998', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '15.0.1'
-Driver info: driver.version: RemoteWebDriver
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteWebDriverOptions.deleteAllCookies(RemoteWebDriver.java:694)
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.manage()" because the return value of "java.lang.InheritableThreadLocal.get()" is null
 	at Com.EAM.TestBase.TestBase.launch_Browser(TestBase.java:108)
 	at Com.EAM.Stepdefinitions.GenralHooks.set_up(GenralHooks.java:14)
 </textarea></span>
@@ -370,12 +301,12 @@ Driver info: driver.version: RemoteWebDriver
 											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">12.15.2021 08:48:23</span>&nbsp;
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Launch the chrome browser navigate to the NSC HomePage url click the user login button] started</span>
 												
 												<div class="st skip">
-													<span class="tt">12.15.2021 08:48:23</span>&nbsp;
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Given Launch the chrome browser navigate to the NSC HomePage url click the user login button]</span>
 													
@@ -385,12 +316,12 @@ Driver info: driver.version: RemoteWebDriver
 											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">12.15.2021 08:48:23</span>&nbsp;
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks the user login button directed to the new window enters username and password.] started</span>
 												
 												<div class="st skip">
-													<span class="tt">12.15.2021 08:48:23</span>&nbsp;
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[When user clicks the user login button directed to the new window enters username and password.]</span>
 													
@@ -400,31 +331,41 @@ Driver info: driver.version: RemoteWebDriver
 											<div class="st skip test l2" 
 												tags=""
 												devices="">
-												<span class="tt">12.15.2021 08:48:23</span>&nbsp;
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 												<span class="ts">skip</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then external user should be landing homepage] started</span>
 												
 												<div class="st skip">
-													<span class="tt">12.15.2021 08:48:23</span>&nbsp;
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 													<span class="ts">skip</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Then external user should be landing homepage]</span>
 													
 													<span class="td">Step skipped</span>
 												</div>
 											</div>
-											<div class="st pass test l2" 
+											<div class="st fail test l2" 
 												tags=""
 												devices="">
-												<span class="tt">12.15.2021 08:48:23</span>&nbsp;
-												<span class="ts">pass</span>&nbsp;&nbsp;
+												<span class="tt">03.23.2022 00:13:33</span>&nbsp;
+												<span class="ts">fail</span>&nbsp;&nbsp;
 												<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Com.EAM.Stepdefinitions.GenralHooks.tear_Down(io.cucumber.java.Scenario)] started</span>
 												
 												<div class="st info">
-													<span class="tt">12.15.2021 08:48:23</span>&nbsp;
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
 													<span class="ts">info</span>&nbsp;&nbsp; 
 													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Com.EAM.Stepdefinitions.GenralHooks.tear_Down(io.cucumber.java.Scenario)]</span>
 													
 													<span class="td">this is my failure message</span>
+												</div>
+												<div class="st fail">
+													<span class="tt">03.23.2022 00:13:33</span>&nbsp;
+													<span class="ts">fail</span>&nbsp;&nbsp; 
+													<span class="tn">&nbsp;&nbsp;&nbsp;&nbsp;|---[Com.EAM.Stepdefinitions.GenralHooks.tear_Down(io.cucumber.java.Scenario)]</span>
+													
+													<span class="td">threw an exception<br><textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.quit()" because the return value of "java.lang.InheritableThreadLocal.get()" is null
+	at Com.EAM.TestBase.TestBase.close(TestBase.java:120)
+	at Com.EAM.Stepdefinitions.GenralHooks.tear_Down(GenralHooks.java:32)
+</textarea></span>
 												</div>
 											</div>
 											</div>
